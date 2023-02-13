@@ -87,6 +87,13 @@ def process_sales_data(sales_csv, orders_dir):
         # TODO: Format the Excel sheet
 
         #Loading workbook
+        wb = openpyxl.load_workbook("Order10100_..xlsx")
+
+        columns = wb['F' , 'G']
+
+        columns.number_format = '"$"#,##0.00'
+
+
 
         
        
